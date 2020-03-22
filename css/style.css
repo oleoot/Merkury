@@ -1,0 +1,47 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: 'Roboto', sans-serif;
+}
+/* Utility classes =============================================================================================================================*/
+:root{
+    --main-text: #0e1a35;
+    --secondary-text: #fff;
+    --third-text: #8492af;
+    --accent-color: #5584ff;
+    }
+    section{
+    padding: 120px 0;
+    }
+    .container{
+    width: 85%;
+    margin: 0 auto;
+    }
+    .flex-container{
+    display: flex;
+    justify-content: space-between;
+    }
+    .flex-container-center{
+    display: flex;
+    justify-content: center;
+    }
+    .grid-container{
+    display: grid;
+    }
+    .text-s{
+    font-size: 18px;
+    font-weight: 400;
+    }
+    .text-md{
+    font-size: 24px;
+    font-weight: 400;
+    }
+    .text-lg{
+    font-size: 60px;
+    font-weight: 300;
+    }
+    .text-xl{
+    font-size: 72px;
+    font-weight: 700;
+    }
