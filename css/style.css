@@ -3,6 +3,7 @@ margin: 0;
 padding: 0;
 box-sizing: border-box;
 font-family: 'Roboto', sans-serif;
+line-height: 1.65;
 }
 /* Header section ===========================================================================================================================*/
 #header{
@@ -53,17 +54,32 @@ color: var(--third-text);
 position: absolute;
 left: 0;
 right: 0;
-bottom: -130px;
+bottom: -190px;
 margin: auto;
 filter: drop-shadow(-20px 0px 50px #132346);
 }
-
-
-
-
-
-
-
+/* Services section ===========================================================================================================================*/
+#services{
+padding: 320px 0 120px 0;
+}
+#services img{
+display: block;
+margin: 0 auto;
+}
+.services-wrap{
+grid-template-columns: 1fr 1fr 1fr;
+grid-gap: 130px;
+}
+.services-wrap p:first-of-type{
+text-align: center;
+color: var(--main-text);
+font-weight: 700;
+margin: 55px 0 30px 0;
+}
+.services-wrap p:last-of-type{
+text-align: center;
+color: var(--third-text);
+}
 
 
 
@@ -115,7 +131,7 @@ display: block;
 margin: 60px auto;
 background: var(--accent-color);
 color: var(--secondary-text);
-padding: 15px 50px;
+padding: 10px 50px;
 border-radius: 20px;
 outline: none;
 border: none;
