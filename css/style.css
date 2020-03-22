@@ -242,6 +242,20 @@ background: url(../img/icons/cross.png) no-repeat left center !important;
  text-align: center;
  margin: 0 auto;
 }
+/* Footer section ===========================================================================================================================*/
+#footer{
+padding: 60px 0;
+background: var(--main-text);
+}
+#footer p, #footer a{
+color: var(--third-text);
+}
+#footer a{
+text-decoration: none;
+}
+#footer li{
+margin: 0 25px;
+}
 /* Utility classes =============================================================================================================================*/
 :root{
     --main-text: #0e1a35;
