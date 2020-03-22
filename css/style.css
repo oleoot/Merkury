@@ -85,6 +85,30 @@ color: var(--third-text);
 
 
 
+.container-devices{
+width: 92.5%;
+float: right;
+}
+.devices-wrap{
+grid-template-columns: 1fr 1fr;
+grid-gap: 50px;
+}
+.devices-wrap p{
+margin: 40px 0;
+color: var(--third-text);
+}
+.devices-wrap ul{
+list-style: none;
+}
+.devices-wrap li{
+color: var(--accent-color);
+background: url(../img/icons/check.png) no-repeat left center;
+padding-left: 30px;
+margin: 10px 0;
+}
+
+
+
 /* Utility classes =============================================================================================================================*/
 :root{
     --main-text: #0e1a35;
@@ -125,6 +149,7 @@ color: var(--third-text);
     .text-xl{
     font-size: 60px;
     font-weight: 300;
+    color: var(--main-text);
     }
 .btn{
 display: block;
