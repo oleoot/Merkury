@@ -190,14 +190,58 @@ color: var(--third-text);
 text-align: right;
 margin-left: 65%;
 }
-
-
-
-
-
-
-
-
+/* Pricing section ===========================================================================================================================*/
+.container-pricing{
+width: 60%;
+margin: 0 auto;
+}
+#pricing h2{
+text-align: center;
+}
+.pricing-wrap{
+grid-template-columns: 1fr 1fr 1fr;
+grid-gap: 100px;
+margin: 80px 0;
+}
+.pricing-wrap>div{
+padding: 40px 50px;
+background: #fff;
+box-shadow: 0 0 30px rgba(0,0,0,0.2);
+}
+.pricing-wrap p:first-of-type{
+text-transform: uppercase;
+text-align: center;
+}
+.pricing-price{
+margin: 30px 0;
+font-size: 72px;
+font-weight: 700;
+text-align: center;
+}
+.pricing-price span{
+color: var(--third-text);
+}
+.pricing-wrap ul{
+list-style-type: none;
+margin: 0 auto;
+width: fit-content;
+}
+.pricing-wrap li{
+background: url(../img/icons/check.png) no-repeat left center;
+color: var(--third-text);
+padding-left: 30px;
+text-align: center;
+margin: 5px;
+}
+.pricing-cross{
+background: url(../img/icons/cross.png) no-repeat left center !important;
+}
+.pricing-description{
+ color: var(--third-text);
+ width: 70%;
+ text-align: center;
+ margin: 0 auto;
+}
 /* Utility classes =============================================================================================================================*/
 :root{
     --main-text: #0e1a35;
