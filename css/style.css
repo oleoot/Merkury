@@ -80,22 +80,14 @@ margin: 55px 0 30px 0;
 text-align: center;
 color: var(--third-text);
 }
-
-
-
-
-
+/* Devices section ===========================================================================================================================*/
 .container-devices{
 width: 92.5%;
-float: right;
+margin-left: 7.5%;
 }
 .devices-wrap{
 grid-template-columns: 1fr 1fr;
 grid-gap: 50px;
-}
-.devices-wrap p{
-margin: 40px 0;
-color: var(--third-text);
 }
 .devices-wrap ul{
 list-style: none;
@@ -106,6 +98,103 @@ background: url(../img/icons/check.png) no-repeat left center;
 padding-left: 30px;
 margin: 10px 0;
 }
+/* Tasks section ===========================================================================================================================*/
+#tasks{
+background: url(../img/bg/bg-1.png);
+background-size: cover;
+background-position: 50% 40%;
+padding: 120px 0 220px 0;
+}
+.tasks-wrap{
+grid-template-columns: 1fr 1fr 2fr;
+grid-gap: 100px;
+}
+.tasks-wrap p{
+color: var(--secondary-text);
+margin-bottom: 30px;
+}
+.tasks-wrap p span{
+color: var(--third-text);
+}
+.tasks-wrap img{
+display: block;
+width: 100%;
+}
+.tasks-wrap h2{
+color: var(--secondary-text);
+}
+.tasks-arrows{
+justify-content: start !important;
+}
+.tasks-arrows img{
+width: auto;
+margin-right: 15px;
+}
+/* Template section ===========================================================================================================================*/
+#template h2{
+text-align: center;
+}
+.template-description{
+text-align: center;
+width: 60%;
+margin: 30px auto 70px;
+}
+#template img{
+display: block;
+margin: 0 auto;
+}
+#template-img{
+position: relative;
+}
+.screen-pane{
+width: 50%;
+position: absolute;
+top: 70px;
+}
+#screen-pane-right{
+right: 0;
+bottom: 140px;
+top: auto;
+}
+.screen-line{
+width: 100%;
+height: 2px;
+background: var(--accent-color);
+margin: 20px 0 30px 0;
+position: relative;
+}
+.screen-line-dot{
+position: absolute;
+width: 30px;
+height: 30px;
+border-radius: 50%;
+border: 5px solid #99b5ff;
+background: var(--accent-color);
+right: 0;
+bottom: -13px;
+}
+#dot-right-pane{
+left: 0;
+right: auto;
+}
+.screen-pane p{
+width: 35%;
+}
+.screen-pane p:first-of-type{
+font-weight: 700;
+}
+.screen-pane p:last-of-type{
+color: var(--third-text);
+}
+#screen-pane-right p{
+text-align: right;
+margin-left: 65%;
+}
+
+
+
+
+
 
 
 
@@ -162,4 +251,8 @@ outline: none;
 border: none;
 font-weight: 700;
 cursor: pointer;
+}
+.item-p{
+    margin: 40px 0;
+    color: var(--third-text);
 }
