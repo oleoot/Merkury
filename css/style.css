@@ -4,6 +4,71 @@ padding: 0;
 box-sizing: border-box;
 font-family: 'Roboto', sans-serif;
 }
+/* Header section ===========================================================================================================================*/
+#header{
+height: 100vh;
+background: url(../img/bg/bg-1.png);
+background-size: cover;
+background-position: 50% 50%;
+position: relative;
+}
+.nav{
+height: 150px;
+align-items: center;
+}
+.nav img{
+width: 230px;
+height: 65px;
+}
+.nav ul{
+list-style-type: none;
+align-items: center;
+}
+.nav li{
+margin: 0 20px;
+}
+.nav a{
+color: var(--secondary-text);
+text-decoration: none;
+}
+#login{
+padding: 12px 45px;
+border: 0.5px solid var(--accent-color);
+border-radius: 20px;
+}
+#login a{
+color: var(--accent-color);
+}
+#header h1, #header p{
+text-align: center;
+}
+#header h1{
+margin: 85px 0 0 25px;
+color: var(--secondary-text);
+}
+#header p{
+color: var(--third-text);
+}
+.absolute-img{
+position: absolute;
+left: 0;
+right: 0;
+bottom: -130px;
+margin: auto;
+filter: drop-shadow(-20px 0px 50px #132346);
+}
+
+
+
+
+
+
+
+
+
+
+
+
 /* Utility classes =============================================================================================================================*/
 :root{
     --main-text: #0e1a35;
@@ -38,10 +103,22 @@ font-family: 'Roboto', sans-serif;
     font-weight: 400;
     }
     .text-lg{
+    font-size: 36px;
+    font-weight: 400;
+    }
+    .text-xl{
     font-size: 60px;
     font-weight: 300;
     }
-    .text-xl{
-    font-size: 72px;
-    font-weight: 700;
-    }
+.btn{
+display: block;
+margin: 60px auto;
+background: var(--accent-color);
+color: var(--secondary-text);
+padding: 15px 50px;
+border-radius: 20px;
+outline: none;
+border: none;
+font-weight: 700;
+cursor: pointer;
+}
