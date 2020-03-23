@@ -44,7 +44,7 @@ color: var(--accent-color);
 text-align: center;
 }
 #header h1{
-margin: 85px 0 0 25px;
+    margin: 85px 0 25px 0;
 color: var(--secondary-text);
 }
 #header p{
@@ -54,13 +54,13 @@ color: var(--third-text);
 position: absolute;
 left: 0;
 right: 0;
-bottom: -190px;
+bottom: -300px;
 margin: auto;
 filter: drop-shadow(-20px 0px 50px #132346);
 }
 /* Services section ===========================================================================================================================*/
 #services{
-padding: 320px 0 120px 0;
+padding: 460px 0 120px 0;
 }
 #services img{
 display: block;
@@ -98,12 +98,19 @@ background: url(../img/icons/check.png) no-repeat left center;
 padding-left: 30px;
 margin: 10px 0;
 }
+.devices-img-wrap{
+align-items: center;
+}
+.devices-img-wrap img{
+display: block;
+width: 100%;
+}
 /* Tasks section ===========================================================================================================================*/
 #tasks{
 background: url(../img/bg/bg-1.png);
 background-size: cover;
 background-position: 50% 40%;
-padding: 120px 0 220px 0;
+padding: 120px 0 120px 0;
 }
 .tasks-wrap{
 grid-template-columns: 1fr 1fr 2fr;
@@ -140,6 +147,7 @@ width: 60%;
 margin: 30px auto 70px;
 }
 #template img{
+width: 75%;
 display: block;
 margin: 0 auto;
 }
@@ -178,7 +186,7 @@ left: 0;
 right: auto;
 }
 .screen-pane p{
-width: 35%;
+width: 70%;
 }
 .screen-pane p:first-of-type{
 font-weight: 700;
@@ -188,7 +196,7 @@ color: var(--third-text);
 }
 #screen-pane-right p{
 text-align: right;
-margin-left: 65%;
+margin-left: 30%;
 }
 /* Pricing section ===========================================================================================================================*/
 .container-pricing{
@@ -255,6 +263,7 @@ text-decoration: none;
 }
 #footer li{
 margin: 0 25px;
+list-style-type: none;
 }
 /* Utility classes =============================================================================================================================*/
 :root{
@@ -300,7 +309,7 @@ margin: 0 25px;
     }
 .btn{
 display: block;
-margin: 60px auto;
+margin: 40px auto;
 background: var(--accent-color);
 color: var(--secondary-text);
 padding: 10px 50px;
@@ -313,4 +322,213 @@ cursor: pointer;
 .item-p{
     margin: 40px 0;
     color: var(--third-text);
+}
+/* Media */
+@media screen and (max-width: 1650px){
+    .container-pricing{
+    width: 85%;
+    }
+    .pricing-wrap{
+    grid-gap: 40px;
+    }
+    .tasks-wrap{
+    grid-template-columns: 1fr 1fr;
+    }
+    #tasks-headline{
+    grid-row-start: 1;
+    grid-row-end: 1;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+.screen-pane p{
+ width: 50%;
+}
+#screen-pane-right p{
+margin-left: 50%;
+}
+#screen-pane-right{
+bottom: 50px;
+}
+.screen-pane{
+top: 5px;
+}
+}
+@media screen and (max-width: 1280px){
+    .services-wrap{
+    grid-gap: 40px;
+    }
+    #screen-pane-right{
+       width: 50%;
+       bottom: -10px;
+    }
+    .screen-pane{
+    top: -35px;
+    width: 60%;
+    }
+    .screen-pane p{
+    width: 60%;
+    }
+    #screen-pane-right p{
+     margin-left: 40%;
+    }
+    .pricing-wrap>div{
+      padding: 20px 10px;
+    }
+    .pricing-price{
+       font-size: 50px;
+    }
+    .text-xl{
+    font-size: 50px;
+    }
+}
+@media screen and (max-width: 1024px){
+    section{
+    padding: 50px 0;
+    }
+    .nav ul{
+       display: none;
+    }
+    .absolute-img{
+    width: 85vw;
+    height: 60vw;
+    bottom: -270px;
+    }
+    #services{
+    padding: 400px 0 50px 0;
+    }
+    .services-wrap{
+     grid-template-columns: 1fr;
+    }
+    .services-wrap>div{
+    padding: 0 100px;
+    }
+    .devices-wrap{
+    grid-template-columns: 1fr;
+    }
+    #tasks{
+        padding: 50px 0 50px 0;
+    }
+    .template-description{
+       width: 80%;
+    }
+    .pricing-wrap{
+     grid-template-columns: 1fr;
+    }
+    .pricing-wrap>div{
+     padding: 60px;
+     max-width: 400px;
+     margin: 0 auto;
+    }
+    .pricing-description{
+     width: 80%;
+    }
+    #template{
+     padding: 50px 0 0;
+    }
+    #template-img{
+        padding: 200px 0;
+        }
+        .screen-pane{
+         width: 100%;
+         top: 45px;
+        }
+        .screen-pane p{
+        width: 100%;
+        }
+        #screen-pane-right{
+         width: 100%;
+         right: auto;
+         bottom: 100px;
+        }
+        #screen-pane-right p{
+        margin-left: auto;
+        }
+}
+@media screen and (max-width: 768px){
+    .absolute-img{
+     bottom: -230px;
+    }
+    #services{
+     padding: 360px 0 50px 0;
+    }
+    .tasks-wrap{
+     grid-gap: 20px;
+    }
+    #footer li{
+     margin: 0 10px;
+    }
+}
+@media screen and (max-width: 640px){
+.text-xl{
+font-size: 35px;
+}
+.text-lg{
+font-size: 28px;
+}
+.text-md{
+font-size: 20px;
+}
+.text-s{
+font-size: 15px;
+}
+.absolute-img{
+bottom: -80px;
+}
+#services{
+padding: 210px 0 50px 0;
+}
+.services-wrap>div{
+padding: 0 20px;
+}
+#screen-pane-right{
+bottom: 70px;
+}
+.template-description{
+width: 100%;
+margin: 30px auto 0px;
+}
+#footer p, #footer a{
+font-size: 13px;
+}
+}
+@media screen and (max-width: 425px){
+    .absolute-img {
+        bottom: 25px;
+        width: 90vw;
+        height: 63vw;
+}
+#services{
+padding: 60px 0 0 0;
+}
+.tasks-img-wrap{
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+#screen-pane-right{
+bottom: 30px;
+}
+.screen-pane{
+top: 30px;
+}
+.pricing-wrap>div {
+    padding: 30px;
+    max-width: 320px;
+}
+.pricing-wrap li{
+margin: 20px 0;
+}
+.pricing-description{
+ width: 100%;
+}
+.container-wrap{
+flex-wrap: wrap;
+}
+.container-wrap p{
+margin: 0 auto;
+text-align: center;
+}
+.container-wrap ul{
+margin: 10px auto;
+
+}
 }
