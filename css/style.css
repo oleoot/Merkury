@@ -65,6 +65,7 @@ padding: 460px 0 120px 0;
 #services img{
 display: block;
 margin: 0 auto;
+width: 90px;
 }
 .services-wrap{
 grid-template-columns: 1fr 1fr 1fr;
@@ -94,7 +95,7 @@ list-style: none;
 }
 .devices-wrap li{
 color: var(--accent-color);
-background: url(../img/icons/check.png) no-repeat left center;
+background: url(../img/icons/check.png) no-repeat left center/contain;
 padding-left: 30px;
 margin: 10px 0;
 }
@@ -134,7 +135,7 @@ color: var(--secondary-text);
 justify-content: start !important;
 }
 .tasks-arrows img{
-width: auto;
+width: 35px;
 margin-right: 15px;
 }
 /* Template section ===========================================================================================================================*/
@@ -208,7 +209,7 @@ text-align: center;
 }
 .pricing-wrap{
 grid-template-columns: 1fr 1fr 1fr;
-grid-gap: 100px;
+grid-gap: 50px;
 margin: 80px 0;
 }
 .pricing-wrap>div{
@@ -235,14 +236,14 @@ margin: 0 auto;
 width: fit-content;
 }
 .pricing-wrap li{
-background: url(../img/icons/check.png) no-repeat left center;
+background: url(../img/icons/check.png) no-repeat left center/contain;
 color: var(--third-text);
 padding-left: 30px;
 text-align: center;
 margin: 5px;
 }
 .pricing-cross{
-background: url(../img/icons/cross.png) no-repeat left center !important;
+background: url(../img/icons/cross.png) no-repeat left center/contain !important;
 }
 .pricing-description{
  color: var(--third-text);
@@ -405,6 +406,10 @@ top: 5px;
     .devices-wrap{
     grid-template-columns: 1fr;
     }
+    .devices-wrap div:first-of-type{
+     padding-right: 40px;
+    }
+
     #tasks{
         padding: 50px 0 50px 0;
     }
